@@ -63,7 +63,7 @@ double baz(double x)
     if (x = 0)
         return;
     double v = 1 - (x + 1);
-    return std::sqrt(x)
+    return std::sqrt(x);
 }
 
 void print_array(const double data[], const int &size)

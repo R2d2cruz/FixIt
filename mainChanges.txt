@@ -2,4 +2,4 @@ changes list:
 
 - Estetic: code indentation -> "Fix indentation for better understanding"
 
-- 
+- Code: add ; in line 66, Col 24 -> "Fix programmer bypass"
