@@ -9,12 +9,11 @@ void print_array(const double data[], const int &size);
 
 int main(int argc, char **argv)
 {
-    int ii, jj;
-    ii = 0;
-    jj = -1;
+    int ii = 0;
+    int jj = -1;
+
     foo(ii, jj);
     foo(jj, ii);
-
     baz(25.9);
 
     const int NX = 2, NY = 3, NZ = 4;
