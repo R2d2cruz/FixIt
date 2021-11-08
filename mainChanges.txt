@@ -15,3 +15,5 @@ changes list:
 - Code: declare "assignArrayDouble" line 9; add space line 85; define function line 86, 87, 88, 89, 90, 91 -> "create a function that assigns zeros to double arrays"
 
 - Code: use assignArrayDouble in array "x", "y", "z" line 28, 29, 30; add space line 31 -> "we assume that the author wanted to initialize the values ​​to zero"
+
+- Code: remove redefinition of int "ii", "jj" line 32, 33 -> "we assume the author wanted to reuse "ii" and "jj"
