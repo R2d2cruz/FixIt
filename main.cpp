@@ -19,10 +19,14 @@ int main(int argc, char **argv)
     const int NX = 2;
     const int NY = 3;
     const int NZ = 4;
-    
+
     double *x, y[NY], z[NZ];
     x = new double[NX];
-    int ii, jj, kk;
+
+    int ii = 0;
+    int jj = 0;
+    int kk = 0;
+    
     print_array(x, NX);
     print_array(y, NY);
     print_array(z, NZ);
