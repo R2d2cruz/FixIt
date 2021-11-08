@@ -73,7 +73,7 @@ int bar(int a, int b)
 double baz(double x)
 {
     if (x == 0)
-        return;
+        return 0;
     double v = 1 - (x + 1);
     return std::sqrt(x);
 }
