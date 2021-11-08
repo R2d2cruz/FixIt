@@ -21,3 +21,5 @@ changes list:
 - Code: add = in the if sentence line 75, col 12 -> "we assume that the author wanted to compare "x" with 0"
 
 - Code: add  , 0 in line 85, Col 16, 17 -> "we assume that the author wanted to return zero"
+
+- Code: try and catch in case of zero divition line 64, 66, 67, 69; add return 0 in catch line 68 -> "we don't know what the author want so, in case of a zero divition, we return zero"
