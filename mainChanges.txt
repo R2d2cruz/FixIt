@@ -22,4 +22,4 @@ changes list:
 
 - Code: add  , 0 in line 85, Col 16, 17 -> "we assume that the author wanted to return zero"
 
-- Code: try and catch in case of zero divition line 64, 66, 67, 69; add return 0 in catch line 68 -> "we don't know what the author want so, in case of a zero divition, we return zero"
+- Code: try and catch in case of zero division line 64, 66, 67, 69; add return 0 in catch line 68 -> "we don't know what the author want so, in case of a zero division, we return zero"
