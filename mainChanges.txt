@@ -5,3 +5,5 @@ changes list:
 - Code: add ; in line 66, Col 24 -> "Fix programmer bypass"
 
 - Estetic: reorder declarations, line 12, 13 -> line 12, line 12, 14 -> line 13
+
+- Estetic: separate declarations, line 19 -> line 19, 20, 21; add space line 22

@@ -16,7 +16,10 @@ int main(int argc, char **argv)
     foo(jj, ii);
     baz(25.9);
 
-    const int NX = 2, NY = 3, NZ = 4;
+    const int NX = 2;
+    const int NY = 3;
+    const int NZ = 4;
+    
     double *x, y[NY], z[NZ];
     x = new double[NX];
     int ii, jj, kk;
