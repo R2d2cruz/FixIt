@@ -26,7 +26,7 @@ int main(int argc, char **argv)
     double z[NZ];
 
     assignArrayDouble(x, NX);
-    assignArrayDouble(y, NX);
+    assignArrayDouble(y, NY);
     assignArrayDouble(z, NZ);
 
     ii = 0;

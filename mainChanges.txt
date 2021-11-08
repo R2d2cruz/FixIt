@@ -25,3 +25,5 @@ changes list:
 - Code: try and catch in case of zero division line 64, 66, 67, 69; add return 0 in catch line 68 -> "we don't know what the author want so, in case of a zero division, we return zero"
 
 - Code: add if to check "a", "b" different to zero line 64, 71; add return 0 line 72 -> "add extra secure in case the try catch fails"
+
+- Code: replace NX to NY line 29 -> "my bad"
