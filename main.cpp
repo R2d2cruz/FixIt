@@ -61,12 +61,15 @@ int main(int argc, char **argv)
 
 int foo(int a, int b)
 {
-    try {
-        return a / b + b / bar(a, b) + b / a;
+    if (a != 0 && b != 0) {
+        try {
+            return a / b + b / bar(a, b) + b / a;
+        }
+        catch(...) {
+            return 0;
+       }
     }
-    catch(...) {
-        return 0;
-    }
+    return 0;
 }
 
 int bar(int a, int b)
