@@ -25,6 +25,10 @@ int main(int argc, char **argv)
     double y[NY];
     double z[NZ];
 
+    assignArrayDouble(x, NX);
+    assignArrayDouble(y, NX);
+    assignArrayDouble(z, NZ);
+
     int ii = 0;
     int jj = 0;
     int kk = 0;

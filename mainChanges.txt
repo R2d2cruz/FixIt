@@ -13,3 +13,5 @@ changes list:
 - esthetic: separate declarations, line 23 -> line 23, 24, 25; remove line 24; add space line 30 -> "change variable declaration"
 
 - Code: declare "assignArrayDouble" line 9; add space line 85; define function line 86, 87, 88, 89, 90, 91 -> "create a function that assigns zeros to double arrays"
+
+- Code: use assignArrayDouble in array "x", "y", "z" line 28, 29, 30; add space line 31 -> "we assume that the author wanted to initialize the values ​​to zero"
