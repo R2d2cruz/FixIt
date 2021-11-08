@@ -8,6 +8,50 @@ double baz(double x);
 void print_array(const double data[], const int &size);
 void assignArrayDouble(double array[], int size);
 
+class doubleArray {
+private:
+    double *_arr;
+    int _size = 0;
+
+public:
+    doubleArray(int newSize) {
+        _arr = new double[newSize];
+        _size = newSize;
+    }
+
+    int size() {
+        return _size;
+    } // getter size
+
+    double& operator[](int ii) {
+        if (ii < _size) {
+            return _arr[ii];
+        }  else {
+            return _arr[_size - 1];
+        }
+    } // getter array object
+
+    doubleArray& operator+ (double num) {
+        for (int ii = 0; ii < size(); ii++)
+        {
+            _arr[ii] += num;
+        }
+        return *this;
+    }
+
+    doubleArray& operator- (double num) {
+        for (int ii = 0; ii < size(); ii++)
+        {
+            _arr[ii] -= num;
+        }
+        return *this;
+    }
+
+    void empty(){
+        _arr = new double[_size];
+    } // empty the array
+};
+
 int main(int argc, char **argv)
 {
     int ii = 0;
