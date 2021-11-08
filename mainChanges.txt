@@ -17,3 +17,5 @@ changes list:
 - Code: use assignArrayDouble in array "x", "y", "z" line 28, 29, 30; add space line 31 -> "we assume that the author wanted to initialize the values ​​to zero"
 
 - Code: remove redefinition of int "ii", "jj" line 32, 33 -> "we assume the author wanted to reuse "ii" and "jj"
+
+- Code: add = in the if sentence line 75, col 12 -> "we assume that the author wanted to compare "x" with 0"
