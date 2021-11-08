@@ -9,3 +9,5 @@ changes list:
 - esthetic: separate declarations, line 19 -> line 19, 20, 21; add space line 22
 
 - esthetic && Code: add space line 25; separate declarations, line 25 -> line 26, 27, 28; assign value line 26, 27, 28; add space line 29
+
+- esthetic: separate declarations, line 23 -> line 23, 24, 25; remove line 24; add space line 30 -> "change variable declaration"
