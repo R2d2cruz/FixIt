@@ -6,6 +6,7 @@ int foo(int a, int b);
 int bar(int a, int b);
 double baz(double x);
 void print_array(const double data[], const int &size);
+void assignArrayDouble(double array[], int size);
 
 int main(int argc, char **argv)
 {
@@ -79,5 +80,12 @@ void print_array(const double data[], const int &size)
     for (int ii = 0; ii < size; ++ii)
     {
         std::cout << data[ii] << "  ";
+    }
+}
+
+void assignArrayDouble(double array[], int size) {
+    for (int ii = 0; ii < size; ii++)
+    {
+        array[ii] = 0;
     }
 }
