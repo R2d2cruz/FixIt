@@ -3,3 +3,5 @@ changes list:
 - Estetic: code indentation -> "Fix indentation for better understanding"
 
 - Code: add ; in line 66, Col 24 -> "Fix programmer bypass"
+
+- Estetic: reorder declarations, line 12, 13 -> line 12, line 12, 14 -> line 13
