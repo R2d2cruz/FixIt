@@ -1,0 +1,47 @@
+repositorio:
+
+    https://github.com/R2d2cruz/FixIt.git
+
+changes list:
+
+- esthetic: code indentation -> "Fix indentation for better understanding"
+
+- Code: add ; in line 66, Col 24 -> "Fix programmer bypass"
+
+- esthetic: reorder declarations, line 12, 13 -> line 12, line 12, 14 -> line 13
+
+- esthetic: separate declarations, line 19 -> line 19, 20, 21; add space line 22
+
+- esthetic && Code: add space line 25; separate declarations, line 25 -> line 26, 27, 28; assign value line 26, 27, 28; add space line 29
+
+- esthetic: separate declarations, line 23 -> line 23, 24, 25; remove line 24; add space line 30 -> "change variable declaration"
+
+- Code: declare "assignArrayDouble" line 9; add space line 85; define function line 86, 87, 88, 89, 90, 91 -> "create a function that assigns zeros to double arrays"
+
+- Code: use assignArrayDouble in array "x", "y", "z" line 28, 29, 30; add space line 31 -> "we assume that the author wanted to initialize the values ​​to zero"
+
+- Code: remove redefinition of int "ii", "jj" line 32, 33 -> "we assume the author wanted to reuse "ii" and "jj"
+
+- Code: add = in the if sentence line 75, col 12 -> "we assume that the author wanted to compare "x" with 0"
+
+- Code: add  , 0 in line 85, Col 16, 17 -> "we assume that the author wanted to return zero"
+
+- Code: try and catch in case of zero division line 64, 66, 67, 69; add return 0 in catch line 68 -> "we don't know what the author want so, in case of a zero division, we return zero"
+
+- Code: add if to check "a", "b" different to zero line 64, 71; add return 0 line 72 -> "add extra secure in case the try catch fails"
+
+- Code: replace NX to NY line 29 -> "my bad"
+
+- Code: create "doubleArray" to improve data control line 11, 12,13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53; add space line 54 -> "We assume that the author wanted to make functional code failsafe, so we created a class specialized in controlling the array"
+
+- Code: reorganize the code  to use "doubleArray" line 53, 54, 55, 70, 71, 72, 73, 74, 75, 76, 135, 138, 144, 145 -> "implement the necessary changes to use 'doubleArray'"
+
+
+
+
+Sobre la memoria de los arrays:
+En el caso de la declaracion de arreglos de forma:
+
+    double *x, y[NY], z[NZ]
+
+Los arreglos y y z son continuos debido a que la memoria reservada es contigua una a la otra. Mientras el arrglo x, al ser "dinamico" aun no se ha reservado la memoria de este por cual, a menos de reservar la memoria despues de esta, no esta continua a ninguno.
