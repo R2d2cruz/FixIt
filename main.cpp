@@ -5,8 +5,6 @@
 int foo(int a, int b);
 int bar(int a, int b);
 double baz(double x);
-void print_array(const double data[], const int &size);
-void assignArrayDouble(double array[], int size);
 
 class doubleArray {
 private:
@@ -47,10 +45,13 @@ public:
         return *this;
     }
 
-    void empty(){
+    void empty() {
         _arr = new double[_size];
     } // empty the array
 };
+
+void print_array(doubleArray data, int size);
+void assignArrayDouble(doubleArray array);
 
 int main(int argc, char **argv)
 {
@@ -65,13 +66,14 @@ int main(int argc, char **argv)
     const int NY = 3;
     const int NZ = 4;
 
-    double x[NX];
-    double y[NY];
-    double z[NZ];
 
-    assignArrayDouble(x, NX);
-    assignArrayDouble(y, NY);
-    assignArrayDouble(z, NZ);
+    doubleArray x(NX);
+    doubleArray y(NY);
+    doubleArray z(NZ);
+
+    assignArrayDouble(x);
+    assignArrayDouble(y);
+    assignArrayDouble(z);
 
     ii = 0;
     jj = 0;
@@ -130,17 +132,17 @@ double baz(double x)
     return std::sqrt(x);
 }
 
-void print_array(const double data[], const int &size)
+void print_array(doubleArray data, int size)
 {
     std::cout << std::endl;
-    for (int ii = 0; ii < size; ++ii)
+    for (int ii = 0; ii < ((data.size() > size) ? size : data.size()); ++ii)
     {
         std::cout << data[ii] << "  ";
     }
 }
 
-void assignArrayDouble(double array[], int size) {
-    for (int ii = 0; ii < size; ii++)
+void assignArrayDouble(doubleArray array) {
+    for (int ii = 0; ii < array.size(); ii++)
     {
         array[ii] = 0;
     }
