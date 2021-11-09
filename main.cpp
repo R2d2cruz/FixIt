@@ -17,6 +17,10 @@ public:
         _size = newSize;
     }
 
+    ~doubleArray(){
+        delete [] _arr;
+    }
+
     int size() {
         return _size;
     } // getter size
